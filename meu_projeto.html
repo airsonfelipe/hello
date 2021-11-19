@@ -1,0 +1,46 @@
+<meta charset="utf-8">
+
+<h1><center>Tabela de Despesas Mensais</center></h1>
+
+
+<script>
+
+
+function pulaLinha() {
+	document.write("<br>");
+}
+
+
+function mostra(frase) {
+	document.write(frase);
+	pulaLinha();
+}
+
+	
+	valorTotalDespesa = parseInt(prompt("Digite o valor total de despesa mensal, ou, digite 0 (zero) para descriminar todos os valores:"));
+
+
+	if(valorTotalDespesa == 0) {
+
+			var aluguel = parseInt(prompt("Qual o valor do aluguel?"));	
+			var streamings = parseInt(prompt("Qual o valor total de todos os streamings (spotfy, netflix, etc.?)"));
+			var utilities = parseInt(prompt("Qual o valor das utilities?"));
+			var carro = parseInt(prompt("Qual o valor da parcela do carro?"));
+			var pensao = parseInt(prompt("Qual o valor da pensao?"));
+			var att = parseInt(prompt("Qual o valor do plano da At&t?"));
+			var comida = parseInt(prompt("Qual o valor gasto com comida?"));
+			var insurance = parseInt(prompt("Qual o valor da insurance?"));
+
+			mostra("Sua despesa media semanal e " + (aluguel + streamings + utilities + carro + pensao + att + comida + insurance) / 4);
+
+	}
+
+
+	if(valorTotalDespesa > 0) {
+
+	mostra("Sua despesa media semanal e " + valorTotalDespesa / 4);
+
+	} else {false} 
+
+
+</script>
