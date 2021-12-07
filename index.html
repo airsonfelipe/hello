@@ -1,40 +1,37 @@
 <meta charset="utf-8">
 <h1><center>Tabela de Despesas Mensais</center></h1>
-<script>
-function pulaLinha() {
-}
-document.write("<br>");
-function mostra(frase) {
-        document.write(frase);
-}
-pulaLinha();
-        valorTotalDespesa = parseInt(prompt("Digite o valor total de
-despesa mensal, ou, digite 0 (zero) para descriminar todos os
-valores:"));
-        if(valorTotalDespesa == 0) {
-                        var aluguel = parseInt(prompt("Qual o valor do
-aluguel?"));
-total de todos os streamings (spotfy, netflix, etc.?)"));
-das utilities?"));
-parcela do carro?"));
-pensao?"));
-plano da At&t?"));
-gasto com comida?"));
-da insurance?"));
-var streamings = parseInt(prompt("Qual o valor
-var utilities = parseInt(prompt("Qual o valor
-var carro = parseInt(prompt("Qual o valor da
-var pensao = parseInt(prompt("Qual o valor da
-var att = parseInt(prompt("Qual o valor do
-var comida = parseInt(prompt("Qual o valor
-var insurance = parseInt(prompt("Qual o valor
-                        mostra("Sua despesa media semanal e " +
-(aluguel + streamings + utilities + carro + pensao + att + comida +
-insurance) / 4);
-        }
-4);
-if(valorTotalDespesa > 0) {
-mostra("Sua despesa media semanal e " + valorTotalDespesa /
-} else {false}
+<input type="text" id="aluguel"/>aluguel<br><br>
+<input type="text" id="carro"/>carro<br><br>
+<input type="text" id="utilities"/>utilities<br><br>
+<input type="text" id="att"/>att<br><br>
+<input type="text" id="pensao"/>pensao<br><br>
+<input type="text" id="streamings"/>streamings<br><br>
+<input type="text" id="comida"/>comdia<br><br>
+<input type="text" id="investimentos"/>investimentos<br><br>
+<input type="text" id="poupanca"/>poupanca<br><br>
+<input type="text" id="insurance"/>insurance<br><br>
 
- </script>
+
+<input type="button" value="Enviar" onclick="calculaDespesaMensal();"/>
+
+
+<script type="text/javascript">
+
+function calculaDespesaMensal(){
+
+    var aluguel = document.getElementById("aluguel").value;
+    var carro = document.getElementById("carro").value;
+    var utilities = document.getElementById("utilities").value;
+    var att = document.getElementById("att").value;
+    var pensao = document.getElementById("pensao").value;
+    var streamings = document.getElementById("streamings").value;
+    var comida = document.getElementById("comida").value;
+    var investimentos = document.getElementById("investimentos").value;
+    var poupanca = document.getElementById("poupanca").value;
+    var insurance = document.getElementById("insurance").value;
+
+
+    document.write(+aluguel + +carro + +utilities + +att + +pensao + +streamings + +comida + +investimentos + + poupanca + +insurance);
+}
+
+</script>
