@@ -1,0 +1,25 @@
+<!<!DOCTYPE html>
+
+
+<html lang="en">
+
+
+<head>
+
+    
+</head>
+
+
+<body>
+
+
+<script>
+ 
+
+document.write('<img src="G:\My Drive\Alura\Meu Projeto\pictures\01.JPG">')
+document.getElementById('pic')
+
+</script>
+
+</body>
+</html>
