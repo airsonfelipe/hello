@@ -16,8 +16,8 @@
 <script>
  
 
-document.write('<img src="G:\My Drive\Alura\Meu Projeto\pictures\01.JPG">')
-document.getElementById('pic')
+//document.write('<img src="G:\My Drive\Alura\Meu Projeto\pictures\01.JPG">')
+//document.getElementById('pic')
 
 </script>
 
